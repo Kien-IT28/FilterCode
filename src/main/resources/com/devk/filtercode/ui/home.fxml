@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="500" prefWidth="1000"
+            stylesheets="@../css/home.css"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.devk.filtercode.controller.HomeController">
+
+    <!-- Left menu -->
+    <left>
+        <VBox fx:id="menuVBox" prefWidth="200" spacing="10" styleClass="menu" BorderPane.alignment="CENTER">
+            <Button fx:id="btnFilterCode" onAction="#btnFilterCode" prefHeight="42.0" prefWidth="180" text="Filter Code">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20" preserveRatio="true">
+                        <image>
+                            <Image url="@../icons/filtering.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="btnTrainingData" onAction="#btnTrainingData" prefHeight="42.0" prefWidth="180.0" text="Training data">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20.0" preserveRatio="true">
+                        <image>
+                            <Image url="@../icons/database-management.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="btnEditor" onAction="#btnEditor" prefHeight="42.0" prefWidth="180.0" text="Editor">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20" preserveRatio="true">
+                        <image>
+                            <Image url="@../icons/edit-info.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="btnAbout" onAction="#btnAbout" prefHeight="42.0" prefWidth="180.0" text="About">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20" preserveRatio="true">
+                        <image>
+                            <Image url="@../icons/information.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+        </VBox>
+    </left>
+
+    <!-- Center content -->
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content-area" />
+    </center>
+
+</BorderPane>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="1006.0"
+            stylesheets="@../css/editor.css"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.devk.filtercode.controller.EditorController">
+
+    <children>
+        <HBox prefHeight="120.0" prefWidth="1000.0">
+            <children>
+                <Pane prefHeight="120.0" prefWidth="1000.0">
+                    <children>
+                        <Button fx:id="btnRefresh" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#btnRefresh" prefHeight="30.0" prefWidth="117.0" text="Refresh">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
+                                    <image>
+                                        <Image url="@../icons/loading-arrow.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <Button fx:id="btnSearch" layoutX="165.0" layoutY="80.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="30.0" prefWidth="117.0" text="Search">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
+                                    <image>
+                                        <Image url="@../icons/search.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <Label layoutX="14.0" layoutY="13.0" prefHeight="17.0" prefWidth="68.0" text="Part No" />
+                        <TextField fx:id="txtPartNo" layoutX="14.0" layoutY="34.0" prefHeight="31.0" prefWidth="163.0" promptText="Ex: NZEVR7224022J" />
+
+                        <Label layoutX="211.0" layoutY="12.0" text="Group Name" />
+                        <TextField fx:id="txtGroupName" layoutX="211.0" layoutY="33.0" prefHeight="31.0" prefWidth="163.0" promptText="Ex: IQF5" />
+
+                        <Label layoutX="418.0" layoutY="11.0" text="Test Method" />
+                        <TextField fx:id="txtTestMethod" layoutX="418.0" layoutY="33.0" prefHeight="31.0" prefWidth="90" promptText="Ex: ROBOT" />
+
+                        <Label layoutX="552.0" layoutY="12.0" text="Classify" />
+                        <TextField fx:id="txtClassify" layoutX="552.0" layoutY="35.0" prefHeight="31.0" prefWidth="90" promptText="Ex: PT RF" />
+
+                        <Label layoutX="676.0" layoutY="13.0" text="Factory" />
+                        <TextField fx:id="txtFactory" layoutX="676.0" layoutY="35.0" prefHeight="31.0" prefWidth="90" promptText="Ex: P1" />
+
+                        <Button fx:id="btnAdd" layoutX="881.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="28.0" prefWidth="105.0" text="Add">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
+                                    <image>
+                                        <Image url="@../icons/plus.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <Button fx:id="btnEdit" layoutX="881.0" layoutY="47.0" mnemonicParsing="false" onAction="#btnEdit" prefHeight="28.0" prefWidth="105.0" text="Edit">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
+                                    <image>
+                                        <Image url="@../icons/edit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <Button fx:id="btnDelete" layoutX="881.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="28.0" prefWidth="105.0" text="Delete">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0">
+                                    <image>
+                                        <Image url="@../icons/delete.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+
+        <HBox layoutY="129.0" prefHeight="371.0" prefWidth="1000.0">
+            <children>
+                <Pane prefHeight="364.0" prefWidth="1000.0">
+                    <children>
+                        <TableView fx:id="tableData" prefHeight="371.0" prefWidth="1000.0">
+                            <columns>
+                                <TableColumn fx:id="colId" prefWidth="0" visible="false" />
+                                <TableColumn fx:id="colPartNo" prefWidth="200" text="Part No" />
+                                <TableColumn fx:id="colGroupName" prefWidth="200" text="Group Name" />
+                                <TableColumn fx:id="colTestMethod" prefWidth="200" text="Test Method" />
+                                <TableColumn fx:id="colClassify" prefWidth="200" text="Classify" />
+                                <TableColumn fx:id="colFactory" prefWidth="180" text="Factory" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

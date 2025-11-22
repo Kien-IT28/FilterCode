@@ -1,0 +1,30 @@
+/* ===== Background ===== */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom right, #eef2f3, #d9e2ec);
+    -fx-padding: 20;
+    -fx-font-family: "Segoe UI", Roboto, Arial;
+}
+
+/* ===== Khung VBox ===== */
+VBox {
+    -fx-padding: 25 40;
+    -fx-background-color: rgba(255,255,255,0.7);
+    -fx-background-radius: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.1, 0, 5);
+}
+
+/* ===== Tiêu đề filter code (label đầu tiên) ===== */
+VBox > Label:first-child {
+    -fx-font-size: 40px;          /* chữ lớn */
+    -fx-font-weight: bold;
+    -fx-text-fill: #0d1b2a;       /* xanh đen sang trọng */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 5, 0.0, 0, 2);
+    -fx-letter-spacing: 1px;
+}
+
+/* ===== Label Version & Release Date ===== */
+VBox > Label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #334155;       /* ghi xanh dễ nhìn */
+    -fx-opacity: 0.9;
+}

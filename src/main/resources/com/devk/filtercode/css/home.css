@@ -1,0 +1,46 @@
+/* ===== LEFT MENU WRAPPER ===== */
+.menu {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20 10;
+    -fx-spacing: 12;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #e4e7ec; /* viền phải mỏng */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.04), 10, 0, 0, 2);
+}
+
+/* ===== MENU BUTTON ===== */
+.menu .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #344767;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-padding: 10 16;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+
+    /* CĂN TRÁI CHỮ + ICON */
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT; /* icon bên trái chữ */
+    -fx-text-alignment: LEFT;
+}
+
+/* Hover hiệu ứng modern */
+.menu .button:hover {
+    -fx-background-color: #eef3ff;
+    -fx-text-fill: #1a4fb6;
+}
+
+/* Khi được chọn hoặc focus */
+.menu .button:focused,
+.menu .button:selected {
+    -fx-background-color: #dbe7ff;
+    -fx-text-fill: #0f46b5;
+    -fx-border-color: #a7c6ff;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+}
+
+/* Khi nhấn */
+.menu .button:pressed {
+    -fx-background-color: #c8dbff;
+}

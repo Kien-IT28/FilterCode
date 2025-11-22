@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0"
+            stylesheets="@../css/filtercode.css"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.devk.filtercode.controller.FilterCodeController">
+   <Pane layoutX="250.0" layoutY="50.0" prefHeight="200.0" prefWidth="500.0">
+      <children>
+      
+          <!-- Label hiển thị trạng thái -->
+          <Label fx:id="lblStatus" layoutX="11.0" layoutY="127.0" prefHeight="20.0" prefWidth="480.0" text="Trạng thái sẽ hiển thị ở đây" wrapText="true" />
+      
+          <!-- Nút chọn file -->
+          <Button fx:id="btnSelectFile" layoutX="146.0" layoutY="42.0" prefHeight="58.0" prefWidth="209.0" text="Select file Excel">
+              <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0">
+                      <image>
+                          <Image url="@../icons/xls-file.png" />
+                      </image>
+                  </ImageView>
+              </graphic>
+          </Button>
+      </children>
+   </Pane>
+
+</AnchorPane>

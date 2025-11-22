@@ -1,0 +1,74 @@
+/* ================================
+   GLOBAL LAYOUT
+   ================================ */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom right, #eef2f3, #d9e2ec);
+    -fx-padding: 20;
+    -fx-font-family: "Segoe UI", Roboto, Arial;
+}
+
+/* ================================
+   BUTTON
+   ================================ */
+.button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #d0d7de;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+
+    -fx-padding: 8 14 8 14;
+
+    /* Text + Icon alignment */
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT;
+    -fx-graphic-text-gap: 10px;
+
+    /* Shadow nhẹ */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, 2);
+}
+
+/* Hover: xanh nhạt trường phái "modern UI" */
+.button:hover {
+    -fx-background-color: #e8f1fd;
+    -fx-border-color: #b5cff7;
+}
+
+/* Press effect */
+.button:pressed {
+    -fx-background-color: #d6e8ff;
+    -fx-border-color: #90baff;
+}
+
+/* ================================
+   LABEL
+   ================================ */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #34495e;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Label hiển thị tên file */
+#lblFileName {
+    -fx-text-fill: #1a1a1a;
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #d0d7de;
+    -fx-border-radius: 8px;
+    -fx-font-weight: 500;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 4, 0, 1, 1);
+}
+
+/* ================================
+   IMAGE SIZE FIX
+   ================================ */
+.button .image-view {
+    -fx-fit-height: 20px;
+    -fx-fit-width: 20px;
+}

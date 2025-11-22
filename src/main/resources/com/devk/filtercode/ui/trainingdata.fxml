@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" stylesheets="@../css/trainingdata.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devk.filtercode.controller.TrainingDataController">
+
+    <children>
+      <Pane layoutX="235.0" layoutY="50.0" prefHeight="200.0" prefWidth="530.0">
+         <children>
+
+              <!-- Nút chọn file Excel -->
+              <Button fx:id="btnSelectFile" layoutX="26.0" layoutY="57.0" onAction="#btnSelectFile" prefHeight="40.0" prefWidth="189.0" text="Select Excel File">
+                  <graphic>
+                      <ImageView fitHeight="27.0" fitWidth="33.0">
+                          <image>
+                              <Image url="@../icons/xls-file.png" />
+                          </image>
+                      </ImageView>
+                  </graphic>
+              </Button>
+
+             <!-- Label hiển thị tên file -->
+             <Label fx:id="lblFileName" layoutX="233.0" layoutY="57.0" prefHeight="40.0" prefWidth="281.0" text="No file selected" wrapText="true" />
+
+             <!-- Nút Insert -->
+             <Button fx:id="btnInsert" layoutX="233.0" layoutY="117.0" onAction="#btnInsert" prefHeight="41.0" prefWidth="130.0" text="Insert">
+                 <graphic>
+                     <ImageView fitHeight="25.0" fitWidth="25.0">
+                         <image>
+                             <Image url="@../icons/data-collection.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+             </Button>
+
+             <!-- Nút Cancel -->
+             <Button fx:id="btnCancel" layoutX="384.0" layoutY="118.0" onAction="#btnCancel" prefHeight="41.0" prefWidth="130.0" text="Cancel">
+                 <graphic>
+                     <ImageView fitHeight="25" fitWidth="25">
+                         <image>
+                             <Image url="@../icons/database.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+             </Button>
+
+
+         </children></Pane>
+    </children>
+</AnchorPane>

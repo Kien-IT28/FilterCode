@@ -1,0 +1,79 @@
+/* ==================== GENERAL ==================== */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom right, #eef2f3, #d9e2ec);
+    -fx-padding: 20;
+    -fx-font-family: "Segoe UI", Roboto, Arial;
+}
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* ==================== LABEL ==================== */
+.label {
+    -fx-text-fill: #222;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* ==================== TEXTFIELD ==================== */
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #BFBFBF;
+    -fx-padding: 0.5em 0.8em;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused {
+    -fx-border-color: #4A90E2;
+    -fx-effect: dropshadow(gaussian, rgba(74,144,226,0.3), 6, 0, 0, 0);
+}
+
+/* ==================== BUTTON ==================== */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #DCE6F3, #C4D4E8);
+    -fx-text-fill: #1A1A1A;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+
+    -fx-alignment: CENTER_LEFT;
+    -fx-content-display: LEFT;
+    -fx-padding: 6px 12px;
+
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #E7F0FA, #D3E2F2);
+}
+.button:pressed {
+    -fx-background-color: #B9C8DA;
+}
+
+/* ==================== TABLE ==================== */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #C6C6C6;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+/* Header cột */
+.table-view .column-header-background {
+    -fx-background-color: #F2F5F9;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+}
+
+/* Dòng */
+.table-row-cell {
+    -fx-font-size: 13px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #D6E5FF;
+}
